@@ -1,6 +1,13 @@
-﻿using ConsoleApp38.Entities;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection.Emit;
+using System.Text;
+using System.Threading.Tasks;
+using ConsoleApp38.Entities;
 using Microsoft.EntityFrameworkCore;
-namespace BookStoreApp
+
+namespace AppDbContext
 {
     public class LibraryContext : DbContext
     {
@@ -24,7 +31,7 @@ namespace BookStoreApp
         {
             base.OnConfiguring(optionsBuilder);
             optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;
-                                        Initial Catalog = Airport;
+                                        Initial Catalog = BookStore;
                                         Integrated Security=True;
                                         Connect Timeout=5;
                                         Encrypt=False;Trust Server Certificate=False;

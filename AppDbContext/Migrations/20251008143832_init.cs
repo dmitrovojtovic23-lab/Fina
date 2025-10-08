@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace ConsoleApp38.Migrations
+namespace AppDbContext.Migrations
 {
     /// <inheritdoc />
-    public partial class Migrant : Migration
+    public partial class init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

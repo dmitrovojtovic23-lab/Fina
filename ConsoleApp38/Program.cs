@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ConsoleApp38.Entities;
-using BookStoreApp;
+using AppDbContext;
 namespace FinalEntityFramework
 {
     internal class Program
